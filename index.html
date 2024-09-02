@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvedor WEB - Antonio Ernesto</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /*Paramentos para o HTML*/
+        html {
+            font-size: 10px;
+        }
+        /*Paramentos para o body*/    
+        body{
+            font: 2rem sans-serif;
+            background: #917C6C;
+            color: black;
+            margin: 0px;
+            background-image: url("img.jpg") ;
+            background-size: 800px;
+            background-repeat: no-repeat;
+        }
+        /*Paramentos para o Comtainer header cabeçalho*/
+        header {
+            padding: 15px;
+            text-align: center;
+            color: white;
+            background-color: #6F5F53;
+            background-image: url("img.jpg") ;
+            background-size: 800px;
+            background-repeat: no-repeat;
+        }
+        /*Paramentos para o Comtainer nav do menu*/
+        nav {
+            width: 25%;
+            float: left;
+            padding: 10px;
+            background-color: rgba(145, 124, 108, 80%);
+            
+        }
+
+        nav li {
+            list-style: none;            
+        }
+
+        nav li:hover{
+            background-color: #D4B69F;
+        }
+        /*Paramentos para o Container conteudo*/
+        section {
+            width: 75%;
+            float: left;
+            padding: 20px;
+            margin: 0px;
+            border: 0px solid #F6C188;
+            background-color: white;
+            text-align: justify;
+        
+        }
+        /*Paramentos para o Comtainer rodaé*/
+        footer {
+            float:left;
+            text-align: center;
+            width: 100%;
+            height: 200px;
+            padding: 10px;
+            background-color: #F6D4B9;
+            
+        }
+        /*Retira a borda do formuário*/
+        .form {
+            border: 0;
+        }
+        /*Estiliza o link "Ir para o topo" */
+        .topo {  
+            font-size: 15px;
+            text-decoration-line: overline;
+            text-decoration-color:#917C6C;
+        }
+        /*Deixa a cor no link visitado azul*/
+        .topo a:visited{color: blue;}
+        /*ênfase no link para o portifólio, link cor azul*/
+        em , em:visited {color: blue;
+        }
+        /*Retira o sublinhado dos links e define cor preto*/
+        a {text-decoration: none;}
+        a:visited{color: black;}
+    </style>
+</head>
+<body>
+
+<!--layout com Grid-->
+<header id="topo">
+    <h1>
+    DEV<br>
+    Portifólio</h1>
+</header>
+
+<!--Estrutura do Menu-->
+<nav>
+<ul>
+    <li><a href="#sobremim">Sobre mim</a></li>
+    <li><a href="#formacao">Formação</a></li>
+    <li><a href="#portifolio">Portifólio</a></li>
+    <li><a href="#contato">Contato</a></li>
+</ul>
+</nav>
+
+<!--Estrutura do conteúdo-->
+<div id="conteudo">
+    <section>
+        <h2 id="sobremim">Sobre mim</h2>
+        <p>Seja bem vindo a minha página!</p>
+        <p>Me chamo Antonio Ernesto, tecnologia sempre me chamou a atenção, as varias possibilidades de criação, são sensacionais. Atualmente estou ligado a área da saúde, a empresa fornece produtos para as especialidades de urologia, ginecologia e seus tratamentos cirurgicos.
+        </p>
+        <div class="topo"><a href="#topo">> Ir para o topo</a></div>
+
+        <h2 id="formacao">Formação</h2> 
+        <p>Minha formação:</p>
+        <ul>
+            <li>Curso técnico em sistemas de informação - IFPB</li>
+            <li>Tecnologo em Redes de Computadores - UNIP</li>
+            <li>MBA em Gestão de negócios - UNINOVE</li>
+            <li>Pós graduação em Engenharia Clinica - ESTACIO</li>
+        </ul>
+        <div class="topo"><a href="#topo">> Ir para o topo</a></div>
+
+        <h2 id="portifolio">Portifólio</h2>
+        <p>Aqui temos alguns dos projetos desenvolvidos:
+            <ul>
+                <li>Reprositório - Fundamentos Web</li>
+                <p>Clicando no link abaixo, vamos para o repositório das práticas e exercícios das aulas de Fundamentos Web. Muitos recursos envolvendo a aplicação das TAGs do HTML e estilização com CSS. <a href="https://github.com/systemsernesto"><em>(Clique aqui)</em></a></p>
+                
+                              
+            </ul>
+        </p>
+        <div class="topo"><a href="#topo">> Ir para o topo</a></div>
+
+
+        <h2 id="contato">Contato</h2>
+        <p> <ul>
+            <li>Antonio Ernesto Desenvolvedor Web</li>
+            <li>e-mail: <a href="mailto:antonio.ernesto.silva@gmail.com">antonio.ernesto.silva@gmail.com</a></li>
+            <li>Tel: <a href="tel:+551195940 6702">+55 11 95940 6702</a></li>
+        </ul> </p>
+        <form action="" method="post">
+            <fieldset class="form">
+                <table>
+                    <tr>
+                        <td><label for="nome">Nome:</label></td>         
+                        <td><input type="text" name="nome" placeholder="Digite seu nome" size="50" maxlength="50"> </td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">e-mail:</label></td>
+                        <td><input type="text" name="email" placeholder="Digite seu e-mail" size="50" maxlength="50"> </td>
+                    </tr>
+                    <tr>
+                        <td><label for="mensagem">Mensagem:</label></td>
+                        <td><textarea name="mensagem" id="" rows="10" cols="50" placeholder="Digite sua mensagem."></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button>Enviar</button></td>
+                    </tr>
+                </table>
+            
+            
+            
+            
+            </fieldset>
+        </form>
+        <div class="topo"><a href="#topo">> Ir para o topo </a></div>
+    </section>
+
+</div>
+
+<!--Rodapé-->
+<footer>
+    <div>Direitos reservados</div>
+</footer>
+
+</body>
+</html>
